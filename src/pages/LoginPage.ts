@@ -1,0 +1,59 @@
+import { Locator, Page } from "@playwright/test";
+
+import { BasePage } from "./BasePage";
+export class LoginPage extends BasePage {
+  //private locators
+
+  private readonly emailId: Locator;
+  private readonly password: Locator;
+  private readonly loginBtn: Locator;
+  private readonly forgottenPasswordLink: Locator;
+  private readonly loginErrormessage: Locator;
+  private readonly registerLink: Locator;
+
+  //contructoe of the class: init the locators
+  constructor(page: Page) {
+    super(page);
+    this.emailId = page.getByRole("textbox", { name: "E-Mail Address" });
+    this.password = page.getByRole("textbox", { name: "Password" });
+    this.loginBtn = page.getByRole("button", { name: "Login" });
+    this.forgottenPasswordLink = page
+      .getByRole("link", { name: "Forgotten Password" })
+      .first();
+    this.loginErrormessage = page.locator(
+      ".alert.alert-danger.alert-dismissible",
+    );
+    this.registerLink = page.getByRole("link", { name: "Register" });
+  }
+
+  // public page actions(methos/behaviour)
+
+  async goToLoginPage(): Promise<void> {
+    await this.page.goto("opencart/index.php?route=account/login");
+  }
+
+  async getLoginPageTitle(): Promise<string> {
+    return await this.page.title();
+  }
+
+  async isForgottenPwdLinkExist(): Promise<boolean> {
+    return await this.forgottenPasswordLink.isVisible();
+  }
+
+  async doLogin(username: string, password: string): Promise<void> {
+    console.log(`user creds:${username}`);
+    await this.emailId.fill(username);
+    await this.password.fill(password);
+    await this.loginBtn.click();
+  }
+  async isInvalidLoginErrorDisplayed(): Promise<boolean> {
+    return await this.loginErrormessage.isVisible();
+  }
+
+  async isRegisterLinkExists(): Promise<boolean> {
+    return await this.registerLink.isVisible();
+  }
+  async navigateToRegisterPage(): Promise<void> {
+    await this.registerLink.click();
+  }
+}
