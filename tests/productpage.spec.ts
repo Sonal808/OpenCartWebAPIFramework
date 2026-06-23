@@ -2,7 +2,7 @@ import { test, expect } from "../src/fixtures/pageFixtures";
 
 test.beforeEach(async ({ loginPage }) => {
   await loginPage.goToLoginPage();
-  await loginPage.doLogin(process.env.LOGIN!, process.env.PASSWORD!);
+  await loginPage.doLogin(process.env.APP_USERNAME!, process.env.APP_PASSWORD!);
 });
 
 test("verify the the product images count", async ({

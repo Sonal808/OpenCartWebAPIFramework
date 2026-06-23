@@ -2,11 +2,11 @@ import { test, expect } from "../src/fixtures/pageFixtures";
 
 test.beforeEach(async ({ loginPage }) => {
   await loginPage.goToLoginPage();
-  await loginPage.doLogin("larrymith@gmail.com", "1QAZ@wsx3EDC");
+  await loginPage.doLogin(process.env.APP_USERNAME!, process.env.APP_PASSWORD!);
 });
 
 test("Home Page title test", async ({ homePage }) => {
-  const pageTitle = await homePage.getHomePageTitle();
+  const pageTitle = await homePage.getPageTitle();
   console.log("Home page Title", pageTitle);
   expect(pageTitle).toBe("My Account");
 });
