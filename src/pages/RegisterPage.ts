@@ -44,6 +44,7 @@ export class RegisterPage extends BasePage {
   }
 
   async isRegisterAccountheaderVisible(): Promise<boolean> {
+    await this.registerAccount.waitFor({ state: "visible" });
     return await this.registerAccount.isVisible();
   }
 
