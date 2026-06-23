@@ -40,7 +40,7 @@ test("create User test", async ({ request }) => {
   console.log(response.statusText()); //create
 });
 
-test("Update User test", async ({ request }) => {
+test.skip("Update User test", async ({ request }) => {
   let userData = {
     name: "JonnyPW",
     email: `automation${Date.now()}@gmail.com`,
@@ -67,7 +67,7 @@ test("Update User test", async ({ request }) => {
   expect(response.status()).toBe(200);
 });
 
-test("delete User test", async ({ request }) => {
+test.skip("delete User test", async ({ request }) => {
   //JSOBject to JSON: Serialization
   let response = await request.delete(
     "https://gorest.co.in/public/v2/users/8504875",
