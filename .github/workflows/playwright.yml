@@ -32,10 +32,17 @@ jobs:
         env:
           ENV: qa
           BASE_URL: ${{ secrets.BASE_URL }}
-          USERNAME: ${{ secrets.USERNAME }}
-          PASSWORD: ${{ secrets.PASSWORD }}
+          USERNAME: ${{ secrets.APP_USERNAME }}
+          PASSWORD: ${{ secrets.APP_PASSWORD }}
           API_BASE_URL: ${{ secrets.API_BASE_URL }}
           API_TOKEN: ${{ secrets.API_TOKEN }}
+          API_BASE_URL: ${{ secrets.API_BASE_URL }}
+          OAUTH_CLIENT_ID: ${{ secrets.OAUTH_CLIENT_ID }}
+          OAUTH_CLIENT_SECRET: ${{ secrets.OAUTH_CLIENT_SECRET }}
+          OAUTH_GRANT_TYPE: ${{ secrets.OAUTH_GRANT_TYPE }}
+          CONTACT_API_BASE_URL: ${{ secrets.CONTACT_API_BASE_URL }}
+          CONTACT_API_USER_NAME: ${{ secrets.CONTACT_API_USER_NAME }}
+          CONTACT_API_PASSWORD: ${{ secrets.CONTACT_API_PASSWORD }}
 
       - name: Upload HTML Report
         if: always()
