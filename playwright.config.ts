@@ -14,7 +14,7 @@ export default defineConfig({
 
   retries: process.env.CI ? 2 : 0,
 
-  workers: process.env.CI ? 1 : undefined,
+  workers: process.env.CI ? "50%" : undefined,
 
   reporter: [
     ["list"],
@@ -27,7 +27,7 @@ export default defineConfig({
     screenshot: "on-first-failure",
     video: "retain-on-failure",
     trace: "on-first-retry",
-    headless: false,
+    headless: !process.env.CI ? false : true,
   },
 
   /* Configure projects for major browsers */
