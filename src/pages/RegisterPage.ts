@@ -55,9 +55,10 @@ export class RegisterPage extends BasePage {
     password: string,
     isSubscribe: string,
   ) {
+    let emailVal = `${email}${Date.now()}@test.com`;
     await this.firstName.fill(firstName);
     await this.lastName.fill(lastname);
-    await this.email.fill(email);
+    await this.email.fill(emailVal);
     await this.telephone.fill(telephone);
     await this.password.fill(password);
     await this.passwordConfirm.fill(password);
