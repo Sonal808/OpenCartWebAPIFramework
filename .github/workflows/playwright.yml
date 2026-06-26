@@ -17,11 +17,13 @@ on:
         options:
           - QA
           - stage
+          - Dev
 
 jobs:
   test:
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    environment: ${{ github.event.inputs.environment || 'QA' }}
 
     steps:
       - name: Checkout code
