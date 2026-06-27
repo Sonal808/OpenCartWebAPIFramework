@@ -75,7 +75,7 @@ jobs:
       - name: Checkout QA repo
         uses: actions/checkout@v4
         with:
-          repository: naveenanimation20/OpenCartWebAPIFramework
+          repository: Sonal808/OpenCartWebAPIFramework
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -251,7 +251,7 @@ jobs:
       - name: Checkout QA repo
         uses: actions/checkout@v4
         with:
-          repository: Sonal808/OpenCartWebAPIFramework/
+          repository: Sonal808/OpenCartWebAPIFramework
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -443,7 +443,7 @@ jobs:
             echo "overall=❌ SOME FAILURES" >> $GITHUB_OUTPUT
           fi
 
-          REPORT_BASE="https://Sonal808.github.io/OpenCartWebAPIFramework/runs/${{ github.run_id }}"
+          REPORT_BASE="https://Sonal808/.github.io/OpenCartWebAPIFramework/runs/${{ github.run_id }}"
           echo "report_url=${REPORT_BASE}" >> $GITHUB_OUTPUT
 
       - name: Download All Reports
@@ -659,7 +659,7 @@ jobs:
               ]
             }
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets. }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
 
       - name: Pipeline Summary
         run: |
