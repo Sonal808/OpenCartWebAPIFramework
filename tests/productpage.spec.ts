@@ -5,7 +5,7 @@ test.beforeEach(async ({ loginPage }) => {
   await loginPage.doLogin(process.env.APP_USERNAME!, process.env.APP_PASSWORD!);
 });
 
-test("verify the the product images count", async ({
+test("@smoke verify the the product images count", async ({
   homePage,
   searchResultsPage,
   productInfoPage,
@@ -17,7 +17,7 @@ test("verify the the product images count", async ({
   expect(imageCount).toBe(4);
 });
 
-test("verify tproduct Information data", async ({
+test("@smoke verify tproduct Information data", async ({
   homePage,
   searchResultsPage,
   productInfoPage,
@@ -36,10 +36,10 @@ test("verify tproduct Information data", async ({
 });
 
 //common tests
-test("companyLogo exists on productpage", async ({ basePage }) => {
+test("@regression companyLogo exists on productpage", async ({ basePage }) => {
   expect(await basePage.isLogoVisible()).toBeTruthy();
 });
 
-test("footers exists on productpage", async ({ basePage }) => {
+test("@regression footers exists on productpage", async ({ basePage }) => {
   expect(await basePage.getPageFooterCount()).toBe(16);
 });

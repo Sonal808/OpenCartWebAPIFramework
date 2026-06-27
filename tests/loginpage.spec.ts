@@ -11,7 +11,7 @@ test.beforeEach(async ({ page }) => {
   await loginPage.goToLoginPage();
 });
 
-test("Login Page title test", async () => {
+test("@smoke Login Page title test", async () => {
   const pageTitle = await loginPage.getLoginPageTitle();
   console.log("Login page Title", pageTitle);
   expect(pageTitle).toBe("Account Login");
@@ -21,7 +21,7 @@ test("Forgot pwd Link exist test", async () => {
   expect(loginPage.isForgottenPwdLinkExist()).toBeTruthy();
 });
 
-test("User able to loginto app test", async () => {
+test("@regression User able to loginto app test", async () => {
   await loginPage.doLogin(process.env.APP_USERNAME!, process.env.APP_PASSWORD!);
 
   expect.soft(await homePage.isLogOutLinkExist()).toBeTruthy();
