@@ -1,0 +1,10 @@
+API GET response {
+  status: 200,
+  body: {
+    id: 8524817,
+    name: 'APISDAUTOUpdated',
+    email: 'automation1782560508154@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  }
+}
