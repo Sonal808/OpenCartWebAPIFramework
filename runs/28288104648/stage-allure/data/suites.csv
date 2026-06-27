@@ -1,4 +1,4 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","35143","@smoke verify tproduct Information data","chromium","2026-06-27","broken","2026-06-27","","productpage.spec.ts","",""
-"","35134","@smoke verify the the product images count","chromium","2026-06-27","broken","2026-06-27","","productpage.spec.ts","",""
-"","35163","@smoke Login Page title test","chromium","2026-06-27","broken","2026-06-27","","loginpage.spec.ts","",""
+"","3464","@smoke verify tproduct Information data","chromium","2026-06-27","passed","2026-06-27","","productpage.spec.ts","",""
+"","1893","@smoke Login Page title test","chromium","2026-06-27","passed","2026-06-27","","loginpage.spec.ts","",""
+"","3789","@smoke verify the the product images count","chromium","2026-06-27","passed","2026-06-27","","productpage.spec.ts","",""
