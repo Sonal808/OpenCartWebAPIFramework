@@ -1,0 +1,37 @@
+APIResponse: 201 Created
+  Date: Sat, 27 Jun 2026 11:09:14 GMT
+  Content-Type: application/json; charset=utf-8
+  Content-Length: 109
+  Connection: keep-alive
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-5fY9x7jEJL1DXIP5wAGcrQ=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  Etag: W/"fbd290c91948f48391de0d2c189b50f9"
+  Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+  Location: https://gorest.co.in/public/v2/users/8524775
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=63072000; includeSubDomains
+  Vary: Origin
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-Permitted-Cross-Domain-Policies: none
+  X-Ratelimit-Limit: 300
+  X-Ratelimit-Remaining: 299
+  X-Ratelimit-Reset: 0
+  X-Request-Id: a94ac6e4-0684-4b78-9338-5e37dea60db1
+  X-Runtime: 0.075825
+  X-Xss-Protection: 0
+  Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  Cf-Cache-Status: DYNAMIC
+  Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=rJPweHC9BvWv779AYAiR20exYuDrT%2FHy8VjmKgMtqAaw8ge1R0YJeZ2b1ku7%2Bdics%2B0NUZYRllm1fkW9yaBAfXGRgY43uf1qcQq0XRkrjN%2FJQtr32OMJO0c5IUwRACk%3D"}]}
+  Server: cloudflare
+  CF-RAY: a123ff906990ad56-IAD
+  alt-svc: h3=":443"; ma=86400
+{
+  id: 8524775,
+  name: 'JonnyPW',
+  email: 'automation1782558553654@gmail.com',
+  gender: 'male',
+  status: 'active'
+}
+201
+Created

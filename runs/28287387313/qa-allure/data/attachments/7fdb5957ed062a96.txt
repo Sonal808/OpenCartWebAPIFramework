@@ -1,0 +1,109 @@
+APIResponse: 200 OK
+  Date: Sat, 27 Jun 2026 11:09:13 GMT
+  Content-Type: application/json; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: max-age=0, private, must-revalidate
+  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' https://pagead2.googlesyndication.com 'nonce-kUAeZUBXB3MjbWWaMkJwPA=='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://pagead2.googlesyndication.com https://ep1.adtrafficquality.google; frame-src https://googleads.g.doubleclick.net https://ep2.adtrafficquality.google https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+  Etag: W/"44b61f0c099a9e274d156c2bed6f704c"
+  Feature-Policy: camera 'none'; gyroscope 'none'; microphone 'none'; usb 'none'; fullscreen 'self'
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=63072000; includeSubDomains
+  Vary: Origin
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  X-Links-Current: https://gorest.co.in/public/v2/users?page=1
+  X-Links-Next: https://gorest.co.in/public/v2/users?page=2
+  X-Links-Previous: 
+  X-Pagination-Limit: 10
+  X-Pagination-Page: 1
+  X-Pagination-Pages: 302
+  X-Pagination-Total: 3013
+  X-Permitted-Cross-Domain-Policies: none
+  X-Ratelimit-Limit: 300
+  X-Ratelimit-Remaining: 299
+  X-Ratelimit-Reset: 0
+  X-Request-Id: ab9ef3b0-febe-4c4d-be2d-a85ef79486d8
+  X-Runtime: 0.025956
+  X-Xss-Protection: 0
+  Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  Cf-Cache-Status: DYNAMIC
+  Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=HM3Lyag1CS1ZmAlsY12ITwH%2FUY70%2Bg3zVdeUjrS1Edmqd2xfP4umNXuYNvGf1UdsJ69elxgI9mecI45x6H%2BTDgPCczQ5HtzQjZoLuGJ4vNAtXtsOJ0D8WMo2a2f09lI%3D"}]}
+  Content-Encoding: br
+  Server: cloudflare
+  CF-RAY: a123ff8ec9fdec0a-IAD
+  alt-svc: h3=":443"; ma=86400
+[
+  {
+    id: 8524774,
+    name: 'schema test',
+    email: 'automation_1782558552348@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8524772,
+    name: 'APISDAUTOUpdated',
+    email: 'automation1782558548433@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8524770,
+    name: 'APISDAUTOUpdated',
+    email: 'automation1782558546547@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8524769,
+    name: 'APISDAUTO',
+    email: 'automation1782558545854@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8524642,
+    name: 'JonnyPW',
+    email: 'automation1782552253403@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8524641,
+    name: 'schema test',
+    email: 'automation_1782552252378@open.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8524638,
+    name: 'APISDAUTOUpdated',
+    email: 'automation1782552249041@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8524636,
+    name: 'APISDAUTOUpdated',
+    email: 'automation1782552247204@gmail.com',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8524635,
+    name: 'APISDAUTO',
+    email: 'automation1782552246764@gmail.com',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8524088,
+    name: 'Advaya Asan II',
+    email: 'asan_ii_advaya@herzog-shanahan.example',
+    gender: 'female',
+    status: 'inactive'
+  }
+]
+200
+OK
